@@ -11,8 +11,8 @@ describe("Gilded Rose", () => {
         "Backstage passes to a TAFKAL80ETC concert",
         "Sulfuras, Hand of Ragnaros",
       ],
-      range(-1, 11),
-      range(0, 50)
+      range(-1, 11), // [-1, 0, 2, 6, 10, 11],
+      range(0, 50) // [0, 1, 49, 50]
     );
   });
 
