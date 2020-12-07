@@ -1,3 +1,5 @@
+const { range } = require("jest-extended-snapshot");
+
 const { Item, Shop } = require("./gilded-rose");
 
 describe("Gilded Rose", () => {
@@ -7,10 +9,10 @@ describe("Gilded Rose", () => {
         "foo",
         "Aged Brie",
         "Backstage passes to a TAFKAL80ETC concert",
-        "Sulfuras, Hand of Ragnaros"
+        "Sulfuras, Hand of Ragnaros",
       ],
-      [-1, 0, 2, 6, 10, 11],
-      [0, 1, 49, 50]
+      range(-1, 11),
+      range(0, 50)
     );
   });
 
